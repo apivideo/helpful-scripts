@@ -1,3 +1,5 @@
+![](https://github.com/apivideo/API_OAS_file/blob/master/apivideo_banner.png)
+
 # helpful-scripts
 Helpful scripts for massive uploads on api.video
 
