@@ -27,7 +27,7 @@ composer require google/apiclient:^2.0
 ### Quick Start
 
 ```shell
-php index.php
+php Ingest_google_drive.php
 ```
 
 ## Ingest from ftp server to api.video 
