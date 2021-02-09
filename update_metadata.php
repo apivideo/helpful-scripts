@@ -4,7 +4,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 echo  "UPDATE METADATA USING CSV FROM YOUR API.VIDEO ACCOUNT".".\n";
 // Environment choice
-echo "Choose now your environment ('p' for prod or 's' for sandbox) :".".\n";
+echo "Choose your environment ('p' for prod or 's' for sandbox) :".".\n";
 $handleEnv = fopen ("php://stdin","r");
 $lineEnv = fgets($handleEnv);
 if(trim($lineEnv) == 'p'){
@@ -54,13 +54,13 @@ $apiVideoClient->videos->getBrowser()->getClient()->setTimeout(60);
 $csvVideoMetas = file('./'.trim($lineFileName));
 
 //HANDLE FILE INTEGRITY
-echo "Before all, your file will be checked to detect errors"."\n";
+echo "Before making changes, your file will be checked to detect errors"."\n";
 echo "E.g.: separator must be a tab"."\n";
 echo "First row: \n";
 echo "id    metanameX   metanameY metanameZ "."\n";
 echo "Following rows: \n";
 echo "23-24charsvideoId metavalueX   metavalueY  metavalueZ"."\n\n";
-echo "We gonna check that the first column name is 'id', and then that all id fields are set and corresponds to api.video standards"."\n";
+echo "We are going to check that the first column name is 'id', and then that all id fields are set and correspond to api.video standards"."\n";
 echo "READY ?(y/n)"."\n";
 
 $handleQuest = fopen ("php://stdin","r");
@@ -79,7 +79,7 @@ if(trim($lineQuest) == 'y'){
             $z++;
             $otherRowTabs = explode("\t", $otherRow);
             if( !preg_match('/^vi[a-zA-Z0-9]{21,22}$/', $otherRowTabs[0]) ){
-                echo 'Please fix problem detected on id located line '.$z.': id must be 23/24 chars long and alphanumeric beginning by vi : ABORTING!'."\n";
+                echo 'Please fix the problem detected on the id located line '.$z.': id must be 23/24 chars long and alphanumeric beginning by vi : ABORTING!'."\n";
                 exit;
             }
         }
