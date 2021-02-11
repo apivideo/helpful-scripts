@@ -78,10 +78,14 @@ if(trim($lineQuest) == 'y'){
         if($otherRow != $csvVideoMetas[0]){
             $z++;
             $otherRowTabs = explode("\t", $otherRow);
-            if( !preg_match('/^vi[a-zA-Z0-9]{21,22}$/', $otherRowTabs[0]) ){
-                echo 'Please fix the problem detected on the id located line '.$z.': id must be 23/24 chars long and alphanumeric beginning by vi : ABORTING!'."\n";
-                exit;
+            if(preg_match('/^vi[a-zA-Z0-9]{21,22}$/', $otherRowTabs[0]) ) {
+                continue;
             }
+            elseif (preg_match('/^video_[a-zA-Z0-9]{22}$/', $otherRowTabs[0]) ){
+                continue;
+            }
+            echo 'Please fix the problem detected on the id located line '.$z.': id must be 23/24 chars long and alphanumeric beginning by vi or 28 chars long beginning by video_ : ABORTING!'."\n";
+            exit;
         }
     }
     echo "File seems ok, proceeding ..."."\n";
