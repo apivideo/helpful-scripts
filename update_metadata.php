@@ -35,7 +35,7 @@ echo "\n";
 
 // Ask for metadata filename
 
-echo "Please provide your filename (must be located in the current folder with csv file extension) :"."\n";
+echo "Please provide your filename (must be located in the current folder with csv or tsv file extension) :"."\n";
 $handleFileName = fopen ("php://stdin","r");
 $lineFileName = fgets($handleFileName);
 if(trim($lineFileName) == ''){
