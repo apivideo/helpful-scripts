@@ -6,10 +6,7 @@
 
 ![](https://github.com/apivideo/API_OAS_file/blob/master/apivideo_banner.png)
 
-api.video is an API that encodes on the go to facilitate immediate playback, enhancing viewer streaming experiences across multiple devices and platforms. You can stream live or on-demand online videos within minutes.
-
-# API Video 
-[API Video](https://api.video/) lets you easily add video communication - recording and sharing - to all your applications.
+[api.video](https://api.video) is an API that encodes on the go to facilitate immediate playback, enhancing viewer streaming experiences across multiple devices and platforms. You can stream live or on-demand online videos within minutes.
 
 # helpful-scripts
 This repository contains useful scripts for PHP users who want to move videos into api.video more easily, or extract data details from your api.video account into a csv file. It includes:
