@@ -78,7 +78,7 @@ $newVideoIds = array_merge(array_slice($videoIds, $index), array_slice($videoIds
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Api.video : How to create a fake live with my videos that starts related to a defined hour in the past</title>
+    <title>api.video : How to create a fake live with my videos that starts related to a defined hour in the past</title>
     <script src="https://unpkg.com/@api.video/player-sdk"></script>
 </head>
 <body>

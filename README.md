@@ -23,7 +23,7 @@ Quickly ingest video from Google Drive to api.video with this script.
 * PHP 5.4 or greater with the command-line interface (CLI) and JSON extension installed
 * The Composer dependency management tool
 * A Google account with Google Drive enabled
-* An Api.video account
+* An api.video account
 
 ## Installation
 
@@ -50,7 +50,7 @@ Easily ingest files from a selected ftp.server to your api.video account.
 * PHP 5.4 or greater with the command-line interface (CLI)
 * The Composer dependency management tool
 * An Ftp server account
-* An Api.video account
+* An api.video account
 
 ## Installation
 
@@ -76,7 +76,7 @@ Allow to easily export data details from tour api.video account into a csv file.
 
 * PHP 5.4 or greater with the command-line interface (CLI)
 * The Composer dependency management tool
-* An Api.video account
+* An api.video account
 
 ## Installation
 
